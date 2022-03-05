@@ -33,22 +33,25 @@ Environments in OpenAI Gym are designed with the reinforcement learning setting 
 
 Towards using the FrozenLake environment for the dynamic programming setting, we had to first download the file containing the FrozenLakeEnv class. Then, we added a single line of code to share the one-step dynamics of the MDP with the agent.
 
-# obtain one-step dynamics for dynamic programming setting
-self.P = P
+
+    """"
+    # obtain one-step dynamics for dynamic programming setting
+    self.P = P
+    """
 The new FrozenLakeEnv class was then saved in a Python file frozenlake.py, which we will use (instead of the original OpenAI Gym file) to create an instance of the environment.
 
 
 
 
 
-Your Workspace
-You will write all of your implementations within the classroom, using an interface identical to the one shown below. Your Workspace contains five files:
+# Your Workspace
+You will write all of your implementations within the classroom, using an interface identical to the one shown below. Your Workspace contains four files:
 
-frozenlake.py - contains the FrozenLakeEnv class
-Dynamic_Programming.ipynb - the mini project notebook where you will write all of your implementations (this is the only file that you will modify!)
-check_test.py - contains unit tests that you will use to verify that your implementations are correct
-plot_utils.py - contains a plotting function for visualizing state-value functions
-The Dynamic_Programming.ipynb notebook can be found below.
+## frozenlake.py - contains the FrozenLakeEnv class
+## Dynamic_Programming.ipynb - the mini project notebook where you will write all of your implementations (this is the only file that you will modify!)
+## check_test.py - contains unit tests that you will use to verify that your implementations are correct
+## plot_utils.py - contains a plotting function for visualizing state-value functions
+
 
 Note that it is broken into parts, which are designed to be completed at different parts of the lesson. For instance, you will complete Parts 0 and 1 in the concept titled Mini Project: DP (Parts 0 and 1). Then, you should wait to complete Part 2 until you reach the Mini Project: DP (Part 2) c
 
