@@ -52,7 +52,3 @@ You will write all of your implementations within the classroom, using an interf
 ## check_test.py - contains unit tests that you will use to verify that your implementations are correct
 ## plot_utils.py - contains a plotting function for visualizing state-value functions
 
-
-Note that it is broken into parts, which are designed to be completed at different parts of the lesson. For instance, you will complete Parts 0 and 1 in the concept titled Mini Project: DP (Parts 0 and 1). Then, you should wait to complete Part 2 until you reach the Mini Project: DP (Part 2) c
-
-To peruse the other files, you need only click on "jupyter" in the top left corner to return to the Notebook dashboard.
