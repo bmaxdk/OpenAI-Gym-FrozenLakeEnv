@@ -47,8 +47,62 @@ The new FrozenLakeEnv class was then saved in a Python file frozenlake.py, which
 # Your Workspace
 You will write all of your implementations within the classroom, using an interface identical to the one shown below. Your Workspace contains four files:
 
-## frozenlake.py - contains the FrozenLakeEnv class
-## Dynamic_Programming.ipynb - the mini project notebook where you will write all of your implementations (this is the only file that you will modify!)
-## check_test.py - contains unit tests that you will use to verify that your implementations are correct
-## plot_utils.py - contains a plotting function for visualizing state-value functions
+### frozenlake.py - contains the FrozenLakeEnv class
+### Dynamic_Programming.ipynb - the mini project notebook where you will write all of your implementations (this is the only file that you will modify!)
+### check_test.py - contains unit tests that you will use to verify that your implementations are correct
+### plot_utils.py - contains a plotting function for visualizing state-value functions
 
+
+
+
+
+
+## Overview
+
+### Details
+* Name: FrozenLake-v0  
+* Category: Classic Control
+* [Leaderboard Page](https://github.com/openai/gym/wiki/Leaderboard#FrozenLake-v0)
+* Old links:
+  * [Environment Page](https://gym.openai.com/envs/FrozenLake-v0)  
+  * [Algorithms Page](https://gym.openai.com/algorithms?groups=classic_control)
+
+### Description
+The goal of this game is to go from the starting state (S) to the goal state (G) by walking only on frozen tiles (F) and avoid holes (H). However, the ice is slippery, so you won't always move in the direction you intend (stochastic environment)
+
+### Source
+Came from this Colab and blog
+[Blog](https://colab.research.google.com/drive/1oqon14Iq8jzx6PhMJvja-mktFTru5GPl#scrollTo=5aQKQMJTJBPH)
+
+
+## Environment
+
+### Observation
+Type: Discrete (16)
+
+Num | Observation (State)
+---|---
+0 - 15 | For 4x4 square, counting each position from left to right, top to bottom
+
+### Actions
+Type: Discrete(4)
+
+Num | Action
+--- | ---
+0 | Move Left
+1 | Move Down
+2 | Move Right
+3 | Move Up
+
+### Reward
+Reward is 0 for every step taken, 0 for falling in the hole, 1 for reaching the final goal
+
+### Starting State
+Starting state is at the top left corner
+
+### Episode Termination
+1. Reaching the goal or fall into one of the holes
+2. The environment also returns `done` if it has stepped 100 times.
+
+### Solved Requirements
+Reaching the goal without falling into hole over 100 consecutive trials.
